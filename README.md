@@ -20,7 +20,7 @@
 - [LetsChat Live Demo](https://ichat-app-using-react-and-fir-git-21d695-webdeveloper-fresher32.vercel.app/login)
 
 ## Source Code
-- [GitHub Repository](https://github.com/webdeveloper-fresher32/LetsChat.git)
+- [GitHub Repository](https://github.com/webdeveloper-fresher32/LetsChat-App.git)
 
 ## Project Setup
 
