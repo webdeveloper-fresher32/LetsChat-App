@@ -19,9 +19,6 @@
 ## Live Demo
 - [LetsChat Live Demo](https://letschat-app32.netlify.app/)
 
-## Source Code
-- [GitHub Repository](https://github.com/webdeveloper-fresher32/LetsChat-App.git)
-
 ## Project Setup
 
 1. **Clone the Repository**
