@@ -29,10 +29,10 @@
 
 2. **Install Dependencies**
    ```bash
+   cd live-client-side
    npm install
-   cd client
+   cd live-server-side
    npm install
-   cd ..
    ```
 
 3. **Environment Variables**
@@ -43,12 +43,17 @@
    ```
 
 4. **Run the Application**
+5. - To start your frontend run the command:
    ```bash
    npm run dev
    ```
-   This will start both the frontend and backend servers concurrently.
+   - To start your backend once after installing all the dependencies
+   ```bash
+   nodemon index.js
+   ```
+ 
 
-5. **Access the Application**
+6. **Access the Application**
    Open your browser and go to `http://localhost:3000` to start chatting!
 
 ## Deployment
