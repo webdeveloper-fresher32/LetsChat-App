@@ -9,8 +9,8 @@ import {
   DialogTitle,
   IconButton,
 } from "@mui/material";
-import { useDispatch, useSelector } from "react-redux";
-import { create } from "@mui/material/styles/createTransitions";
+import { useSelector } from "react-redux";
+// import { create } from "@mui/material/styles/createTransitions";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -45,7 +45,7 @@ function CreateGroups() {
     };
 
     axios.post(
-      "http://localhost:8080/chat/createGroup",
+      "https://chat-app-wsnh.onrender.com/chat/createGroup",
       {
         name: groupName,
         users: '["647d94aea97e40a17278c7e5","647d999e4c3dd7ca9a2e6543"]',

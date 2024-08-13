@@ -4,7 +4,7 @@ import { IconButton } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import MessageSelf from "./MessageSelf";
 import MessageOthers from "./MessageOthers";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import Skeleton from "@mui/material/Skeleton";
 import axios from "axios";
@@ -32,7 +32,7 @@ function ChatArea() {
     };
     axios
       .post(
-        "http://localhost:8080/message/",
+        "https://chat-app-wsnh.onrender.com/message/",
         {
           content: messageContent,
           chatId: chat_id,
@@ -55,7 +55,7 @@ function ChatArea() {
       },
     };
     axios
-      .get("http://localhost:8080/message/" + chat_id, config)
+      .get("https://chat-app-wsnh.onrender.com/message/" + chat_id, config)
       .then(({ data }) => {
         setAllMessages(data);
         setloaded(true);
@@ -141,7 +141,7 @@ function ChatArea() {
               setMessageContent(e.target.value);
             }}
             onKeyDown={(event) => {
-              if (event.code == "Enter") {
+              if (event.code === "Enter") {
                 // console.log(event);
                 sendMessage();
                 setMessageContent("");

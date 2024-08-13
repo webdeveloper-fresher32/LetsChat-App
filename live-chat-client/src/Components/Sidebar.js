@@ -41,11 +41,13 @@ function Sidebar() {
       },
     };
 
-    axios.get("http://localhost:8080/chat/", config).then((response) => {
-      console.log("Data refresh in sidebar ", response.data);
-      setConversations(response.data);
-      // setRefresh(!refresh);
-    });
+    axios
+      .get("https://chat-app-wsnh.onrender.com/chat/", config)
+      .then((response) => {
+        console.log("Data refresh in sidebar ", response.data);
+        setConversations(response.data);
+        // setRefresh(!refresh);
+      });
   }, [refresh]);
 
   return (

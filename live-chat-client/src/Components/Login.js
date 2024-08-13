@@ -22,15 +22,17 @@ function Login() {
   const loginHandler = async (e) => {
     setLoading(true);
     console.log(data);
+    const token = localStorage.getItem("token");
     try {
       const config = {
         headers: {
           "Content-type": "application/json",
+          Authorization: `Bearer ${token}`,
         },
       };
 
       const response = await axios.post(
-        "http://localhost:8080/user/login/",
+        "https://chat-app-wsnh.onrender.com/user/login/",
         data,
         config
       );
@@ -58,7 +60,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "http://localhost:8080/user/register/",
+        "https://chat-app-wsnh.onrender.com/user/register/",
         data,
         config
       );
@@ -66,6 +68,7 @@ function Login() {
       setSignInStatus({ msg: "Success", key: Math.random() });
       navigate("/app/welcome");
       localStorage.setItem("userData", JSON.stringify(response));
+      localStorage.setItem("token", response.data.token);
       setLoading(false);
     } catch (error) {
       console.log(error);
@@ -108,7 +111,7 @@ function Login() {
               color="secondary"
               name="name"
               onKeyDown={(event) => {
-                if (event.code == "Enter") {
+                if (event.code === "Enter") {
                   // console.log(event);
                   loginHandler();
                 }
@@ -123,7 +126,7 @@ function Login() {
               color="secondary"
               name="password"
               onKeyDown={(event) => {
-                if (event.code == "Enter") {
+                if (event.code === "Enter") {
                   // console.log(event);
                   loginHandler();
                 }
@@ -165,7 +168,7 @@ function Login() {
               name="name"
               helperText=""
               onKeyDown={(event) => {
-                if (event.code == "Enter") {
+                if (event.code === "Enter") {
                   // console.log(event);
                   signUpHandler();
                 }
@@ -179,7 +182,7 @@ function Login() {
               color="secondary"
               name="email"
               onKeyDown={(event) => {
-                if (event.code == "Enter") {
+                if (event.code === "Enter") {
                   // console.log(event);
                   signUpHandler();
                 }
@@ -194,7 +197,7 @@ function Login() {
               color="secondary"
               name="password"
               onKeyDown={(event) => {
-                if (event.code == "Enter") {
+                if (event.code === "Enter") {
                   // console.log(event);
                   signUpHandler();
                 }

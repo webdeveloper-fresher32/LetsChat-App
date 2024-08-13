@@ -36,7 +36,7 @@ function Groups() {
     };
 
     axios
-      .get("http://localhost:8080/chat/fetchGroups", config)
+      .get("https://chat-app-wsnh.onrender.com/chat/fetchGroups", config)
       .then((response) => {
         console.log("Group Data from API ", response.data);
         SetGroups(response.data);
@@ -59,6 +59,7 @@ function Groups() {
           <img
             src={logo}
             style={{ height: "2rem", width: "2rem", marginLeft: "10px" }}
+            alt="Logo"
           />
           <p className={"ug-title" + (lightTheme ? "" : " dark")}>
             Available Groups
