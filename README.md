@@ -65,6 +65,3 @@
 - **Email:** [pirikiralaganesh1234@gmail.com]
 - **LinkedIn:** [Ganesh Pirikirala](https://www.linkedin.com/in/ganesh-p-b711a924a/)
 - **Portfolio:** [Developer Ganesh](https://developer-ganesh.vercel.app/)
-
-## Additional Notes
-This project is part of my continuous learning and contribution to full-stack web development. It showcases my ability to build a full-featured chat application using modern web technologies.
