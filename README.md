@@ -60,12 +60,9 @@
 
 ## Contact Information
 - **Developer:** Ganesh Pirikirala
-- **Email:** [pirikiralaganesh1234@gmail.com](mailto:pirikiralaganesh1234@gmail.com)
-- **LinkedIn:** [Ganesh Pirikirala](https://www.linkedin.com/in/ganesh-pirikirala-b711a924a/)
+- **Email:** [pirikiralaganesh1234@gmail.com]
+- **LinkedIn:** [Ganesh Pirikirala](https://www.linkedin.com/in/ganesh-p-b711a924a/)
 - **Portfolio:** [Developer Ganesh](https://developer-ganesh.vercel.app/)
 
 ## Additional Notes
 This project is part of my continuous learning and contribution to full-stack web development. It showcases my ability to build a full-featured chat application using modern web technologies.
-```
-
-This markdown file outlines the key aspects of your chat application project and provides all necessary details for someone interested in understanding or using the project.
