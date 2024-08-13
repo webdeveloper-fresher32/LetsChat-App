@@ -17,7 +17,7 @@
 - **Scalability:** Built with scalability in mind, leveraging the power of the MERN stack.
 
 ## Live Demo
-- [LetsChat Live Demo](https://ichat-app-using-react-and-fir-git-21d695-webdeveloper-fresher32.vercel.app/login)
+- [LetsChat Live Demo](https://letschat-app32.netlify.app/)
 
 ## Source Code
 - [GitHub Repository](https://github.com/webdeveloper-fresher32/LetsChat-App.git)
